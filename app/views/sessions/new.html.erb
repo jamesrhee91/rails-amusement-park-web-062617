@@ -1,0 +1,14 @@
+<%= form_for(:user) do |f| %>
+<label>Select your name</label>
+<br>
+<div class="field">
+<label for="user_name">Name</label><br>
+<%= f.text_field :name %>
+</div>
+
+<div class="field">
+<label for="user_password">Password</label><br>
+<%= f.password_field :password %>
+</div>
+<%= submit_tag "Sign In" %>
+<% end %>

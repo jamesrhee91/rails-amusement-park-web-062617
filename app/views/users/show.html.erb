@@ -1,0 +1,20 @@
+<p id="notice">Welcome back to the theme park!</p>
+
+
+<div class="center">
+  <div class="pic">
+    <img src="http://8900-presscdn-0-84.pagely.netdna-cdn.com/wp-content/themes/beautycon/assets/img/avatar-grey.png" height="250">
+  </div>
+
+<h1>  <%= flash[:message] %> </h1>
+
+ <div class="info">
+    <p><strong>Name:</strong> <%= @user.name %> </p>
+    <p><strong>Tickets:</strong> <%= @user.tickets %> </p>
+    <p><strong>Mood:</strong> <%= @user.mood %> </p>
+    <p><strong>Height:</strong> <%= @user.height %> inches</p>
+    <p><strong>Role:</strong> <%= @role %> </p>
+    <p> <%= link_to "Edit", edit_user_path(@user.id) %> </p>
+    <p> <%= link_to "See attractions", attractions_path %> </p>
+  </div>
+</div>
